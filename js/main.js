@@ -11,8 +11,19 @@ menuIcon.addEventListener('click',()=>{
     if(ul.classList.contains('ativo')){
         ul.classList.remove('ativo');
         document.querySelector('.menu-icon img').src = 'img/menu.png';
+
     }else{
         ul.classList.add('ativo');
         document.querySelector('.menu-icon img').src = 'img/close.png';     
     }
 })
+
+document.querySelectorAll('.ul a[href^="#"]').forEach(link => {
+    link.addEventListener('click', () => {
+        ul.classList.remove('ativo');
+        document.querySelector('.menu-icon img').src = 'img/menu.png';
+    });
+    setTimeout(() => {
+        window.location.href = link.getAttribute('href');
+    }, 300);
+});
