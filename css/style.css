@@ -299,6 +299,29 @@ main .container{
 footer{
     background-color: var(--verde-escuro);
 }
+footer .container{
+    display: flex;
+    color: white;
+}
+footer .container ul{
+    width: 25%;
+}
+footer .container h3{
+    margin-top: 16px;
+    font-weight: 600;
+}
+footer .container .redes-sociais img{
+    margin-right: 10px;
+}
+footer .container ul > p{
+    margin-bottom: 30px;
+}
+footer .container li{
+    margin: 10px 0;
+}
+footer .container a{
+    color: white;
+}
 
 
 /*css responsivo*/
@@ -410,6 +433,17 @@ footer{
     .newsletter .box-newsletter button{
         width: 50%;
         margin-top: 20px;
+    }
+    /*css footer*/
+    footer .container ul{
+        margin-top: 30px;
+    }
+    footer .container{
+        flex-direction: column;
+        text-align: center;
+    }   
+    footer .container ul{
+        width: 100%;
     }
 
 }
